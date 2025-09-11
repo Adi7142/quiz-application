@@ -6,7 +6,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-
+use App\Models\Role;
 class User extends Authenticatable
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */
@@ -33,6 +33,9 @@ class User extends Authenticatable
         'remember_token',
     ];
 
+    public function roles() {
+        return $this->belongsToMany(Role::class);
+    }
     /**
      * Get the attributes that should be cast.
      *
