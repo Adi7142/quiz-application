@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; padding: 0;
+    background: #f9f9f9;
+}
+
+.navbar {
+    background: #333;
+    color: #fff;
+    padding: 1em;
+}
+.navbar a { color: #fff; margin-right: 1em; text-decoration: none; }
+
+.container {
+    width: 80%;
+    margin: 2em auto;
+    background: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+h1, h2 { color: #333; }
+button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover { background: #0056b3; }
+
+.question {
+    margin-bottom: 1.5em;
+}
